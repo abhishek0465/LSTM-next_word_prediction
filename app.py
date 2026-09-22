@@ -31,7 +31,7 @@ st.title("Next Word Prediction Model")
 st.subheader("Mini LLM with LSTM")
 
 seed = st.text_input("Enter Initial Text: ", 'Hello')
-num_words = st.slider("Number of words to generate",1,20,10)
+num_words = st.slider("Number of words to generate",1,50,10)
 
 if st.button("Generate"):
     result = generate_text(seed,num_words)
